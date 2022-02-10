@@ -1,0 +1,45 @@
+.nav {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    border-top: 1px solid rgba(121,121,121,0.3);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   /*  box-sizing: border-box; */ /* space-between을 하면 필요하지만 
+   space-around를 주면 그 안에서 정렬이 잡힘-padding은 빼면 모양이 안예뻐서 padding은 유지할것  */
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.nav__link {
+    position: relative;
+}
+
+.nav__notification {
+
+    position: absolute;
+    left: 10px;
+    bottom:10px;
+
+
+}
+
+.nav__notification_2 {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 15px;
+    bottom:15px;
+}
+
+

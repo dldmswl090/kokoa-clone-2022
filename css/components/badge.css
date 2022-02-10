@@ -1,0 +1,15 @@
+
+.badge {
+background-color: tomato;
+/* display: block; display:flex랑 같이 쓰면 뭐가 잘 안잡혀서 주석처리함 */
+width: 15px;
+height: 15px;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+color:#ffff;
+font-weight: 600;
+
+
+}

@@ -1,0 +1,61 @@
+#friends-display-link {
+    text-align: center;
+    display: block;
+    background-color: #fafafa;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+#friends-display-link i {
+    color: rgba(0,0,0,0.3);
+    margin-right: 5px;
+}
+
+#friends-display-link i:nth-child(2) {
+    margin-left: 5px;
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* keyframe 애니메이션 */
+
+@keyframes hideSplachScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    background-color: var(--yellow);
+    /* 전체를 채우기 위해서 body가 부모가 되게하려고 따로 relative; 안줌 */
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    animation: hideSplachScreen 0.4s ease-in-out forwards;
+    animation-delay:2;
+}

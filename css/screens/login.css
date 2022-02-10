@@ -1,0 +1,75 @@
+.welcome-header {
+    margin: 90px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    
+
+}
+
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.7;
+}
+
+/* 내가 생각했을때 가운데 오게 하는 방법 */
+/* .welcome-header__text {
+    text-align: center;
+}
+ */
+
+ #login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+#login-form input {
+    border:none;
+    padding: 15px 0;
+    /* box-sizing: border-box; */
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+    transition: border-color .3s ease-in-out;
+}
+
+/* not의 첫등장! input 전체를 해줬다가 어? 이타입은 해당안되게 해줘 해서 not쓰임 */
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color:inherit;
+    font-size: 13px;
+}
+
+#login-form input::placeholder {
+    color: rgba(0,0,0,0.4);
+}
+
+/* input을 클릭했을때 아웃라인 없애주기(깔끔) */
+#login-form input:focus {
+    outline: none;
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
