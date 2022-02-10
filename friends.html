@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends-welcome to kokoa talk</title>
+    <script src="https://kit.fontawesome.com/631068b774.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!--to do wifi icon -->
+            <i class="fa fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <!-- battery icon -->
+            <i class="fa fa-battery-full"></i>
+            <!-- lighting icon -->
+            <i class="fa fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="header__icons">
+            <span><i class="fa fa-search"></i></span>
+            <span><i class="fa fa-music"></i></span>
+            <span><i class="fa fa-gear"></i></span>
+        </div>
+    </header>
+
+    <a id="friends-display-link" href="#">
+        <i class="fa fa-info-circle"></i>Friends' Names Display<i class="fa fa-chevron-right fa-xs"></i>
+    </a>
+    <!-- main의 역할은 header랑 아래 있는 user-component 내용들이 패딩이랑 이런거 딱 맞게 정렬시키는 역할 -->
+    <main class="friends-screen">
+    <div class="user-component">
+        <div class="user-component__column">
+            <img src="screenshot's/arii.png" class="user-component__avatar user-component__avatar--xl" alt="프로필사진">
+            <div class="user-component__text">
+                <h4 class="user-component__title">leeeunji</h4>
+                <!-- chat에 있는 것 비슷한거 미리 만들어둔것  -->
+                <!-- <h5 class="user-component__subtitle">this text whatever</h5> -->
+            </div>
+        </div>
+        <div class="user-component__column"></div>
+    </div>
+    <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+            <span>Channel</span>
+            <i class="fa fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="screenshot's/arii.png" class="user-component__avatar user-component__avatar--sm" alt="프로필사진">
+                <div class="user-component__text">
+                    <h4 class="user-component__title user-component__title-not-bold">Channel</h4>
+                    <!-- chat에 있는 것 비슷한거 미리 만들어둔것  -->
+                    <!-- <h5 class="user-component__subtitle">this text whatever</h5> -->
+                </div>
+            </div>
+            <div class="user-component__column">
+                <div class="user-component">
+                    <span>2</span>
+                    <i class="fa fa-chevron-right fa-xs"></i>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa fa-user"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">1</span><i class="fa fa-comment"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fa fa-search"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="more.html"><span class="nav__notification_2">&nbsp;</span><i class="fa fa-ellipsis-h"></i></a></li>
+        </ul>
+    </nav>
+ 
+    <!-- kokoa톡 켰을때 젤 먼저 보이는 화면 애니메이션 작업 -->
+    <div id="splash-screen">
+        <i class="fa fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+        <span>Your screen is super big ㅠㅠ!!!</span>
+    </div>
+
+   
+
+</body>
+</html>

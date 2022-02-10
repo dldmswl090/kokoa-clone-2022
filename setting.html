@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <script src="https://kit.fontawesome.com/631068b774.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!--to do wifi icon -->
+            <i class="fa fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <!-- battery icon -->
+            <i class="fa fa-battery-full"></i>
+            <!-- lighting icon -->
+            <i class="fa fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="alt-header">
+        <div class="alt-header__column">
+        <a href="more.html"> <!-- more로 가는 < 버튼  -->
+            <i class="fa fa-angle-left fa-2x"></i>
+        </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Settings</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fa fa-search fa-lg"></i>
+        </div>
+    </header>
+
+  
+    <!-- main의 역할은 header랑 아래 있는 user-component 내용들이 패딩이랑 이런거 딱 맞게 정렬시키는 역할 -->
+    <main class="main-screen">
+       <ul class="settings-list">
+        <li class="settings-setting">
+        <div class="setting__setting-column">
+            <i class="fa fa-bullhorn"></i>
+            <span>Notice</span>
+        </div>
+        <div class="setting__setting-column"></div>
+        </li>
+        <li class="settings-setting">
+        <div class="setting__setting-column">
+            <i class="fa fa-flask"></i>
+            <span>Kakao Lab</span>
+        </div>
+        <div class="setting__setting-column"></div>
+     </li>
+     <li class="settings-setting">
+    <div class="setting__setting-column">
+        <i class="fa fa-info-circle"></i>
+        <span>Version</span>
+    </div>
+    <div class="setting__setting-column">Latest Version</div>
+ </li>
+               
+             
+           
+       </ul>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa fa-user"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">1</span><i class="fa fa-comment"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fa fa-search"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="more.html"><span class="nav__notification_2">&nbsp;</span><i class="fa fa-ellipsis-h"></i></a></li>
+        </ul>
+    </nav>
+ 
+
+    <div id="no-mobile">
+        <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+   
+
+</body>
+</html>
